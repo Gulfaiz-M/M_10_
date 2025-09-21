@@ -1,12 +1,9 @@
-num = int(input("Input number:"))
-result = 0
-temp = num
-while temp!=0:
-  digit = temp % 10 
-  result = result+digit**3
-  temp = temp//10
-print(result)
-if num == result:
-  print(num, "is an armstrong number ")
-else:
-  print(num, "is not an armstrong number ")
+def print_factors(number):
+    print("The factors of",number,"are:")
+    for i in range(1, number + 1):
+        if number % i == 0:
+            print(i)
+
+number = int(input("Enter your number to find it's factors: "))
+
+print_factors(number)
